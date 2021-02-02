@@ -1,0 +1,19 @@
+.App {
+}
+
+.accordion-card {
+  border: 3px solid grey;
+}
+
+.card-title {
+}
+.card-icon:hover {
+  cursor: pointer;
+}
+.card-description {
+  display: none;
+}
+
+.active {
+  display: block;
+}
