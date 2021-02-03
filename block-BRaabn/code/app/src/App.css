@@ -1,0 +1,68 @@
+.App {
+  background-color: #f1f5f8;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+.sidebar {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-body {
+  height: 100vh;
+  min-width: 100%;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  /* border: 3px solid goldenrod; */
+}
+
+.modal {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  background: palevioletred;
+  color: white;
+  font-weight: 700;
+  padding: 5rem 10rem;
+}
+
+.modal button {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  border: none;
+  background-color: palevioletred;
+}
+
+.modal button:hover {
+  background-color: palevioletred;
+}
+
+.home-actions {
+  display: flex;
+}
+
+.home-actions button:hover {
+  background-color: #ffffff;
+}
+
+.actions {
+  border: none;
+  background-color: #ffffff;
+  text-align: left;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.actions:hover {
+  background-color: #f1f5f8;
+  cursor: pointer;
+}
