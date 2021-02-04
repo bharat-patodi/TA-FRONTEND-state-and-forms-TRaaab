@@ -1,0 +1,221 @@
+/* ---------------------------------------------------------------
+CSS Reset (minified)
+--------------------------------------------------------------- */
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* This is a slightly adjusted version of the box-sizing reset for ensuring that components inside an explicitly declared content-box are also content-box'ed */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+/* ---------------------------------------------------------------
+My Base Styles
+--------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&family=Caveat:wght@400;700&family=Fredoka+One&family=Hachi+Maru+Pop&family=Hanalei&family=Inconsolata:wght@400;700&family=Indie+Flower&family=Kalam:wght@400;700&family=Lato:wght@400;700&family=Lexend+Mega&family=Lobster&family=Open+Sans+Condensed:wght@700&family=Rajdhani:wght@400;700&family=Raleway:wght@400;700&family=Sriracha&family=Teko:wght@400;700&display=swap");
+
+body {
+  line-height: 1.5;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  font-size: 1.6em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+label,
+input {
+  display: block;
+}
+
+/* ---------------------------------------------------------------
+Modular Classes
+--------------------------------------------------------------- */
+.container {
+  max-width: 100ch;
+  margin: 0 auto;
+}
+
+/* ---------------------------------------------------------------
+Project Specific Styles
+--------------------------------------------------------------- */
+
+.App {
+  /* text-align: center; */
+}
+
+.userInput {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.all-fonts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-content: center;
+  grid-gap: 1.5rem;
+  margin: 1rem;
+}
+
+.font-card {
+  border: 3px solid goldenrod;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.font-card-header {
+  display: flex;
+  justify-content: space-between;
+}
+.font-name {
+  font-weight: 700;
+}
+.font-styles {
+  color: grey;
+}
+.font-author {
+  color: grey;
+}
+.font-showcase {
+  margin-top: 1rem;
+  height: 200px;
+  font-size: 2rem;
+}
